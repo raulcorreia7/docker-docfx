@@ -1,10 +1,9 @@
-FROM brebete/dotnet-mono:latest
+FROM mono:latest
 
-LABEL maintainer="tsgkadot<tsgkadot@gmail.com>" \
-      updater="Heberte F Moraes<brebete@gmail.com>" \
+LABEL maintainer="raulcorreia7<raulcorreia7@gmail.com>" \
       description="For DocFX building(with mono.)"
 
-ENV DOCFX_VER 2.56.7
+ENV DOCFX_VER 2.58.4
 
 RUN apt-get update \
  && apt-get install unzip wget git -y \
