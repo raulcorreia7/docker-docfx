@@ -15,12 +15,5 @@ RUN apt-get update \
  && chmod +x /usr/bin/docfx \
  && rm -f /tmp/*
 
-# Configure the tools
-RUN mkdir -p /source
-
-WORKDIR /source
-
-ENTRYPOINT ["docfx"]
-
 CMD ["docfx", "-h"]
 
